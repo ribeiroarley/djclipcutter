@@ -1,5 +1,4 @@
 import type { FaqItem } from '../types';
-import { getSecureEmail } from '../utils/security';
 
 export const FAQ_DATA: FaqItem[] = [
   {
@@ -29,6 +28,7 @@ export const FAQ_DATA: FaqItem[] = [
   },
   {
     question: 'Como faço para solicitar a produção do meu set?',
-    answer: `Trabalhamos no formato sob demanda por set avulso, sem contratos engessados. Basta clicar em qualquer botão de contato da página ou enviar um e-mail diretamente para ${getSecureEmail()} com o link do seu set para combinarmos os detalhes e iniciarmos a produção.`
+    answer:
+      'Trabalhamos no formato sob demanda por set avulso, sem contratos engessados. Basta preencher o briefing na seção de contato da página com o link homologado do seu set para validarmos o material e iniciarmos a produção imediatamente.'
   }
 ];

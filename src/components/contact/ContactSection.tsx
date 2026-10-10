@@ -1,7 +1,5 @@
 import React, { useState, useId } from 'react';
 import {
-  Copy,
-  Check,
   Send,
   ShieldCheck,
   ShieldAlert,
@@ -14,13 +12,10 @@ import {
 } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail, getValidatedMailto } from '../../utils/security';
+import { getValidatedMailto } from '../../utils/security';
 import { validateSetUrl, getSupportedPlatformList } from '../../utils/urlValidator';
 
 export const ContactSection: React.FC = () => {
-  const [copied, setCopied] = useState(false);
-  const email = getSecureEmail();
-
   // Form states
   const [rawUrl, setRawUrl] = useState('');
   const [artistName, setArtistName] = useState('');
@@ -37,12 +32,6 @@ export const ContactSection: React.FC = () => {
   // Real-time URL validation
   const validation = rawUrl.trim() ? validateSetUrl(rawUrl) : null;
   const isUrlValid = validation?.isValid === true && Boolean(validation.sanitizedUrl && validation.platform);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
-  };
 
   // Generate safe mailto URL when link is validated, otherwise fallback to standard mailto
   const mailtoHref = isUrlValid && validation?.sanitizedUrl && validation.platform
@@ -276,46 +265,11 @@ export const ContactSection: React.FC = () => {
                 )}
 
                 <div className="flex items-center justify-between text-[11px] font-mono text-text-muted px-1">
-                  <span>Canal Oficial: {email}</span>
+                  <span>Canal Oficial Homologado</span>
                   <span className="flex items-center gap-1">
                     <ExternalLink className="w-3 h-3 text-accent-neon" />
                     Abre seu aplicativo de e-mail pré-preenchido
                   </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Email Spotlight Box & Manual Copy Fallback */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-bg-primary/90 border border-border-official max-w-2xl mx-auto space-y-3 w-full">
-              <span className="text-[11px] font-mono text-text-muted uppercase tracking-widest block">
-                Prefere enviar manualmente direto pelo seu e-mail?
-              </span>
-
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 w-full">
-                <span className="font-mono text-xs sm:text-base text-white font-bold tracking-wider select-all break-all sm:break-normal">
-                  {email}
-                </span>
-
-                <div className="flex items-center gap-2 w-full sm:w-auto">
-                  <button
-                    onClick={handleCopyEmail}
-                    className={`inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-bold transition-all w-full sm:w-auto shrink-0 active:scale-95 ${
-                      copied
-                        ? 'bg-vu-green text-black shadow-[0_0_12px_#00E676]'
-                        : 'bg-accent-neon/20 text-accent-neon hover:bg-accent-neon hover:text-white border border-accent-neon/50'
-                    }`}
-                    aria-label="Copiar endereço de e-mail"
-                  >
-                    {copied ? (
-                      <>
-                        <Check className="w-3.5 h-3.5" /> Copiado! ✓
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-3.5 h-3.5" /> Copiar E-mail
-                      </>
-                    )}
-                  </button>
                 </div>
               </div>
             </div>

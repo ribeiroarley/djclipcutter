@@ -34,7 +34,7 @@ export const App: React.FC = () => {
         {/* Operational FAQ */}
         <FaqSection />
 
-        {/* Exclusive Contact via djclipcutter@gmail.com */}
+        {/* Verified Contact & Briefing Section */}
         <ContactSection />
       </main>
 

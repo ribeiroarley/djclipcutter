@@ -1,7 +1,6 @@
 import React from 'react';
 import { Mail, ShieldCheck, Disc3, Radio, Send } from 'lucide-react';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail } from '../../utils/security';
 
 export const Footer: React.FC = () => {
   return (
@@ -54,7 +53,7 @@ export const Footer: React.FC = () => {
               <span>Enviar Briefing do Set</span>
             </a>
             <p className="text-[11px] font-mono text-text-muted">
-              Canal oficial: <span className="text-zinc-300 font-semibold">{getSecureEmail()}</span>
+              Atendimento exclusivo via formulário com validação de link.
             </p>
           </div>
 
@@ -96,7 +95,9 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
             <span className="text-text-secondary">Produção Audiovisual para DJs & Produtores</span>
             <span className="text-border-official hidden sm:inline">•</span>
-            <span className="text-accent-neon">{getSecureEmail()}</span>
+            <a href="#contato" className="text-accent-neon hover:underline">
+              Briefing Seguro de Envio
+            </a>
           </div>
         </div>
       </div>

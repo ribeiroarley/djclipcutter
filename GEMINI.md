@@ -10,7 +10,8 @@
   * Promessas engessadas de resolução ("4K nativo") ou taxa de quadros fixa ("60 FPS").
   * Marcas ou referências a concorrentes (1001Tracklists, Cercle, etc.).
   * Links ou botões de WhatsApp.
-- Canal Oficial Único: djclipcutter@gmail.com.
+- Canal Oficial Único: djclipcutter@gmail.com (ofuscado internamente no código).
+  * O endereço de e-mail NUNCA deve ser exibido como texto visível na interface para evitar envios manuais sem validação; o envio ocorre exclusivamente pelo botão do formulário de briefing validado.
   * Todos os botões mailto DEVEM incluir ?subject= e &body= pré-preenchidos.
 
 ## 2. Design System & Tokens

@@ -29,10 +29,9 @@ git grep -i "whatsapp"
 ```
 
 ### 2. Validação dos Botões e Links de Contato
-- O canal oficial único é `djclipcutter@gmail.com`.
-- Todos os botões e links `mailto:` DEVEM utilizar o helper `getSecureMailto()` com:
-  * Parâmetro `subject` preenchido (ex: `"Solicitação de Produção de Cortes — DJ Clip Cutter"`).
-  * Parâmetro `body` com template estruturado de 4 itens (Link do Set, Trecho preferido, Formato desejado, Nome Artístico/Instagram).
+- O canal oficial é `djclipcutter@gmail.com` (ofuscado internamente no código).
+- O endereço de e-mail NUNCA deve ser exibido como texto visível na tela para evitar que usuários enviem links manualmente sem passar pelo validador.
+- O único botão que dispara a abertura do cliente de e-mail é o botão do formulário de briefing validado (`getValidatedMailto()`), contendo o link do set já sanitizado e aprovado.
 
 ### 3. Checagem Mobile-First (360px a 430px)
 - **Contenção Estrita**: Nenhum elemento pode estourar a largura da tela (`w-full max-w-full box-border`).

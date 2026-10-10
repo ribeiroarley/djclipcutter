@@ -3,7 +3,6 @@ import { PLANS_DATA } from '../../data/plans';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Check, Send, Clock, Video } from 'lucide-react';
-import { getSecureEmail } from '../../utils/security';
 
 export const Plans: React.FC = () => {
   const plan = PLANS_DATA[0];
@@ -111,7 +110,7 @@ export const Plans: React.FC = () => {
               </Button>
 
               <p className="text-[11px] font-mono text-center text-text-muted">
-                Contratação direta sem burocracia: <span className="text-accent-neon font-semibold">{getSecureEmail()}</span>
+                Contratação direta sem burocracia: <span className="text-accent-neon font-semibold">Envio 100% via Briefing Seguro</span>
               </p>
             </div>
 

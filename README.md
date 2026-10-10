@@ -9,8 +9,8 @@ Landing Page oficial do serviço **DJ Clip Cutter**. Especializada em transforma
 ## 📬 Canal Oficial de Atendimento & Contratação
 
 Para solicitações de cortes, propostas sob demanda ou envio de links de sets:
-- **E-mail Institucional Único**: `djclipcutter@gmail.com`
-- **Atendimento**: Exclusivo sob demanda via e-mail direto com briefing de estúdio.
+- **Fluxo Oficial de Contratação**: Exclusivo via formulário de briefing na Landing Page com validação de segurança de link em tempo real.
+- **Atendimento**: Sob demanda para DJs e produtores de música eletrônica.
 
 ---
 

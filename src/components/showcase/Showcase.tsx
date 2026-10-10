@@ -5,7 +5,6 @@ import { TemplatePreview } from './TemplatePreview';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Check, Send, Layers } from 'lucide-react';
-import { getSecureEmail } from '../../utils/security';
 
 export const Showcase: React.FC = () => {
   const [activeTemplateIndex, setActiveTemplateIndex] = useState(0);
@@ -172,7 +171,7 @@ export const Showcase: React.FC = () => {
               </Button>
 
               <span className="text-xs font-mono text-text-muted text-center sm:text-left">
-                Canal exclusivo: {getSecureEmail()}
+                Envio com validação de link em tempo real
               </span>
             </div>
           </div>

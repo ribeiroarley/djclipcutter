@@ -2,33 +2,12 @@ import React, { useState } from 'react';
 import { FAQ_DATA } from '../../data/faq';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail } from '../../utils/security';
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const secureEmail = getSecureEmail();
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const renderAnswerText = (answer: string) => {
-    if (answer.includes(secureEmail)) {
-      const parts = answer.split(secureEmail);
-      return (
-        <>
-          {parts[0]}
-          <a
-            href="#contato"
-            className="text-accent-neon font-mono font-bold hover:underline hover:text-white transition-colors inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 rounded bg-accent-neon/10 border border-accent-neon/30"
-          >
-            {secureEmail}
-          </a>
-          {parts[1]}
-        </>
-      );
-    }
-    return answer;
   };
 
   return (
@@ -97,7 +76,7 @@ export const FaqSection: React.FC = () => {
                 >
                   <div className="overflow-hidden">
                     <div className="px-5 sm:px-6 py-4 sm:py-5 text-sm sm:text-[15px] text-zinc-300 font-sans leading-relaxed border-t border-[#182234] bg-bg-primary/50">
-                      {renderAnswerText(item.answer)}
+                      {item.answer}
                     </div>
                   </div>
                 </div>
