@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    background-color: #050a12;
+    color: #F4F4F5;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  /* Custom Studio Dark Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #050a12;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #182234;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 85, 0, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF5500;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .bg-grid-pattern {
+    background-size: 36px 36px;
+    background-image: 
+      linear-gradient(to right, rgba(24, 34, 52, 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(24, 34, 52, 0.4) 1px, transparent 1px);
+  }
+
+  .bg-radial-booth {
+    background: radial-gradient(circle at 50% 0%, rgba(255, 85, 0, 0.12) 0%, rgba(5, 10, 18, 0) 70%),
+                radial-gradient(circle at 100% 50%, rgba(0, 229, 255, 0.05) 0%, rgba(5, 10, 18, 0) 60%),
+                #050a12;
+  }
+
+  .text-glow-orange {
+    text-shadow: 0 0 20px rgba(255, 85, 0, 0.65), 0 0 40px rgba(255, 85, 0, 0.3);
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.65), 0 0 40px rgba(0, 229, 255, 0.3);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(12, 20, 36, 0.85) 0%, rgba(9, 14, 23, 0.75) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid #182234;
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card-hover:hover {
+    border-color: rgba(255, 85, 0, 0.5);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 85, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
