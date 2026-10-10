@@ -23,10 +23,10 @@ export const Hero: React.FC = () => {
             {/* Top Tagline Badge */}
             <div className="inline-flex items-center gap-2 flex-wrap justify-center lg:justify-start">
               <Badge variant="orange" pulse size="md">
-                Padrão Studio Broadcast
+                Design Profissional
               </Badge>
               <Badge variant="cyan" size="md">
-                Design Editorial de Palco
+                Alta Fidelidade Visual
               </Badge>
             </div>
 
@@ -44,17 +44,13 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="w-full max-w-md mx-auto flex flex-col gap-3 px-0 lg:mx-0 lg:max-w-none lg:flex-row pt-2 box-border">
+            <div className="w-full max-w-sm sm:max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-3.5 my-6 lg:mx-0 lg:max-w-none lg:justify-start box-border">
               <Button
-                href={getSecureMailto(
-                  'Solicitação de Demonstração - DJ Clip Cutter',
-                  'Olá, gostaria de solicitar uma demonstração para o meu set: [Link do YouTube/SoundCloud]'
-                )}
+                href={getSecureMailto()}
                 variant="primary"
-                size="lg"
-                icon={<Mail className="w-5 h-5 shrink-0" />}
+                icon={<Mail className="w-4 h-4 shrink-0" />}
                 iconPosition="left"
-                className="w-full max-w-full box-border flex items-center justify-center text-center px-4 py-3.5 rounded-xl text-xs sm:text-sm font-bold lg:w-auto"
+                className="h-12 w-full sm:w-auto px-6 flex items-center justify-center gap-2.5 rounded-xl font-semibold text-sm transition-all shadow-neon-glow"
               >
                 Solicitar Demonstração via E-mail
               </Button>
@@ -62,10 +58,9 @@ export const Hero: React.FC = () => {
               <Button
                 href="#video-youtube"
                 variant="secondary"
-                size="lg"
                 icon={<ArrowRight className="w-4 h-4 shrink-0" />}
                 iconPosition="right"
-                className="w-full max-w-full box-border flex items-center justify-center text-center px-4 py-3.5 rounded-xl text-xs sm:text-sm font-bold lg:w-auto"
+                className="h-12 w-full sm:w-auto px-6 flex items-center justify-center gap-2.5 rounded-xl font-semibold text-sm transition-all"
               >
                 Ver Demonstração de Vídeo
               </Button>
@@ -102,7 +97,7 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Broadcast Player Mockup Preview */}
+          {/* Right Column: Player Mockup Preview */}
           <div className="lg:col-span-5 flex justify-center w-full mt-8 lg:mt-0">
             <div className="relative w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[340px] mx-auto">
               {/* Outer Glow Halo */}
@@ -118,12 +113,12 @@ export const Hero: React.FC = () => {
 
                 {/* Inner Screen (9:16 Ratio Showcase) */}
                 <div className="relative rounded-[1.8rem] sm:rounded-[2rem] bg-gradient-to-b from-[#0c1424] via-[#070d17] to-[#040810] overflow-hidden border border-border-official pt-8 pb-3 sm:pb-4 px-3 sm:px-4 flex flex-col justify-between h-[480px] sm:h-[560px]">
-                  {/* Top Broadcast Overlay Bar */}
+                  {/* Top Overlay Bar */}
                   <div className="flex items-center justify-between z-10">
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-vu-red animate-ping" />
                       <span className="text-[8px] sm:text-[10px] font-mono font-bold text-white tracking-widest bg-black/60 px-1.5 sm:px-2 py-0.5 rounded border border-border-official">
-                        STUDIO BROADCAST • 60FPS
+                        ALTA DEFINIÇÃO • 60FPS
                       </span>
                     </div>
                     <span className="text-[8px] sm:text-[10px] font-mono text-accent-neon font-bold tracking-wider">
@@ -174,7 +169,7 @@ export const Hero: React.FC = () => {
                         AURA MATRIX (ORIGINAL MIX)
                       </h4>
                       <p className="text-[11px] sm:text-xs text-text-secondary font-mono truncate">
-                        DJ CLIP CUTTER • STUDIO MASTER
+                        DJ CLIP CUTTER • AUDIO MASTER
                       </p>
                     </div>
                   </div>

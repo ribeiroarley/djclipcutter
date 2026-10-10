@@ -24,11 +24,11 @@ export const Features: React.FC = () => {
               </Badge>
             </div>
             <h2 className="font-bebas text-3xl sm:text-5xl lg:text-6xl text-white tracking-wide leading-tight">
-              A CIÊNCIA POR TRÁS DO{' '}
-              <span className="text-accent-neon text-glow-orange block sm:inline">PADRÃO STUDIO BROADCAST</span>
+              A CIÊNCIA POR TRÁS DOS{' '}
+              <span className="text-accent-neon text-glow-orange block sm:inline">CORTES EM ALTA DEFINIÇÃO</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-text-secondary font-sans leading-relaxed">
-              Enquanto ferramentas automatizadas geram cortes sem contexto musical, combinamos curadoria de estúdio com renderização de alta fidelidade.
+              Enquanto ferramentas automatizadas geram cortes genéricos sem contexto musical, realizamos curadoria especializada no drop com renderização em alta fidelidade.
             </p>
           </div>
 
@@ -190,7 +190,7 @@ export const Features: React.FC = () => {
 
                 {/* Bottom App Simulation */}
                 <div className="pt-2 border-t border-border-official flex justify-between text-[9px] sm:text-[10px] font-mono text-text-muted">
-                  <span>Padrão Studio Broadcast</span>
+                  <span>Design Profissional</span>
                   <span className="text-accent-neon">100% Protegido</span>
                 </div>
               </div>

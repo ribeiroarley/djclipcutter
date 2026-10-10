@@ -14,10 +14,28 @@ export const getSecureEmail = (): string => {
   return `${_u.join('')}@${_d.join('')}`;
 };
 
+export const DEFAULT_EMAIL_SUBJECT = 'Solicitação de Produção de Cortes — DJ Clip Cutter';
+
+export const DEFAULT_EMAIL_BODY = [
+  'Olá, DJ Clip Cutter!',
+  '',
+  'Gostaria de solicitar a produção de cortes para o meu set.',
+  '',
+  '1. Link do Set (YouTube / SoundCloud / Drive): ',
+  '2. Trecho preferido (opcional / minuto do drop): ',
+  '3. Formato desejado (Vídeo do YouTube ou Template com Waveform): ',
+  '4. Meu Nome Artístico / Instagram: ',
+  '',
+  'Aguardo o retorno para combinarmos os detalhes!',
+].join('\n');
+
 /**
- * Builds secure mailto link with encoded parameters.
+ * Builds standardized secure mailto link with encoded parameters.
  */
-export const getSecureMailto = (subject?: string, body?: string): string => {
+export const getSecureMailto = (
+  subject: string = DEFAULT_EMAIL_SUBJECT,
+  body: string = DEFAULT_EMAIL_BODY
+): string => {
   const email = getSecureEmail();
   const params: string[] = [];
 

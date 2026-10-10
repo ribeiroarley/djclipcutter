@@ -1,8 +1,8 @@
 # DJ CLIP CUTTER — Official Landing Page
 
-> **Studio Broadcast & Engenharia Visual de Palco para DJs, Produtores e Gravadoras de Música Eletrônica.**
+> **Cortes Verticais Especializados em Alta Fidelidade para DJs e Produtores.**
 
-Landing Page oficial do ecossistema **DJ Clip Cutter**. Especializada em transformar apresentações completas e sets gravados (no YouTube, SoundCloud ou arquivos brutos em nuvem) em cortes verticais inteligentes em **alta fidelidade (resolução máxima preservada @ 60 FPS)**, milimetricamente sincronizados no drop do beat e com acabamento editorial de palco.
+Landing Page oficial do serviço **DJ Clip Cutter**. Especializada em transformar apresentações completas e sets gravados (no YouTube, SoundCloud ou arquivos diretos) em cortes verticais inteligentes em **alta fidelidade (resolução máxima preservada @ 60 FPS)**, milimetricamente sincronizados no drop do beat e otimizados para Reels, TikTok e Shorts.
 
 ---
 

@@ -20,7 +20,7 @@ export const FAQ_DATA: FaqItem[] = [
   {
     question: 'Qual a diferença entre os cortes de YouTube e os templates de SoundCloud?',
     answer:
-      'Para apresentações gravadas em vídeo (YouTube), realizamos o enquadramento vertical inteligente Full-Bleed com resolução máxima preservada e filtro de nitidez adaptativo (AMD CAS) que valoriza os lasers, iluminação e o público de palco. Para sets e faixas de áudio (SoundCloud ou arquivos locais), você escolhe entre nossa coleção de templates interativos com motion design reativo (Vinil 3D, CD Jewel Case, Jog Wheel CDJ-3000, Mixer Pro, Fone de Cabine, entre outros) com waveform que pulsa no ritmo exato do grave.'
+      'Para apresentações gravadas em vídeo (YouTube), adaptamos o vídeo para preencher a tela vertical do celular sem barras pretas, preservando a resolução máxima e aplicando nitidez que valoriza a iluminação e o DJ. Para faixas e sets de áudio (SoundCloud ou arquivos locais), você escolhe entre templates visuais interativos com motion design reativo (Vinil 3D, CD Jewel Case, Jog Wheel CDJ-3000, Mixer Pro, Fone de Cabine, entre outros) com waveform pulsando no ritmo do som.'
   },
   {
     question: 'Posso personalizar os créditos e a identidade visual?',

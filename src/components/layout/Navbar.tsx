@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-1.5 mt-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-emerald-400/90 uppercase">
-                Studio Broadcast
+                ONLINE • DISPONÍVEL
               </span>
             </div>
           </div>
@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-[11px] font-mono tracking-widest text-emerald-400 uppercase">
-                Studio Broadcast
+                ONLINE • DISPONÍVEL
               </span>
             </div>
             <span className="text-xs font-mono text-text-secondary flex items-center gap-1">

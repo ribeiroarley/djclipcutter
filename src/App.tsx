@@ -12,14 +12,14 @@ import { Footer } from './components/layout/Footer';
 export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-bg-primary text-text-primary selection:bg-accent-neon selection:text-white flex flex-col font-sans overflow-x-hidden w-full max-w-[100vw]">
-      {/* Studio Header & Navigation */}
+      {/* Header & Navigation */}
       <Navbar />
 
       <main className="flex-grow w-full overflow-x-hidden">
         {/* Hero Section with Live Player Simulation */}
         <Hero />
 
-        {/* YouTube Video: Full-Bleed Sets to Vertical Stage Cuts */}
+        {/* YouTube Video: Sets do YouTube ao Corte Vertical */}
         <YoutubeVideoShowcase />
 
         {/* Interactive Templates Showcase with Safe Zones */}
@@ -28,7 +28,7 @@ export const App: React.FC = () => {
         {/* Technical Mechanism & Safe Zones */}
         <Features />
 
-        {/* Packages & Studio Production Plans */}
+        {/* Packages & Production Plans */}
         <Plans />
 
         {/* Operational FAQ */}
@@ -38,7 +38,7 @@ export const App: React.FC = () => {
         <ContactSection />
       </main>
 
-      {/* Official Studio Broadcast Footer */}
+      {/* Footer */}
       <Footer />
     </div>
   );

@@ -196,7 +196,7 @@ export const TemplatePreview: React.FC<TemplatePreviewProps> = ({
           <div className="w-full max-w-[200px] sm:max-w-[230px] rounded-xl bg-bg-card border border-accent-neon/40 p-3 sm:p-4 shadow-neon-sm space-y-2.5 sm:space-y-3">
             <div className="flex items-center justify-between text-[7px] sm:text-[8px] font-mono text-text-secondary border-b border-border-official pb-1.5">
               <span className="text-accent-neon font-bold">EDITORIAL GRID</span>
-              <span>STUDIO BROADCAST</span>
+              <span>ÁUDIO MASTER</span>
             </div>
             <div className="space-y-1">
               <span className="text-[8px] sm:text-[9px] font-mono text-cdj-cyan block tracking-wider uppercase">
@@ -222,7 +222,7 @@ export const TemplatePreview: React.FC<TemplatePreviewProps> = ({
         <div className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-accent-neon animate-ping" />
           <span className="text-[8px] sm:text-[9px] font-mono font-bold text-white tracking-wider">
-            STUDIO BROADCAST • 60FPS
+            ALTA DEFINIÇÃO • 60FPS
           </span>
         </div>
         <div className="flex items-center gap-1.5">
@@ -232,7 +232,7 @@ export const TemplatePreview: React.FC<TemplatePreviewProps> = ({
             </span>
           )}
           <span className="text-[7px] sm:text-[8px] font-mono text-text-muted">
-            STUDIO
+            MASTER
           </span>
         </div>
       </div>

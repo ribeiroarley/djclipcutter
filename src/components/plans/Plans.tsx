@@ -99,23 +99,19 @@ export const Plans: React.FC = () => {
             </div>
 
             {/* Direct Mail CTA */}
-            <div className="pt-4 border-t border-border-official/60 space-y-2 w-full box-border">
+            <div className="mt-8 pt-4 border-t border-border-official/60 space-y-3 w-full box-border">
               <Button
-                href={getSecureMailto(
-                  'Solicitação de Produção - Set Avulso',
-                  'Olá time DJ Clip Cutter,\n\nGostaria de solicitar a produção do meu Set Avulso:\n\n• Link do Set (YouTube/SoundCloud/Drive):\n• Nome do DJ/Artista:\n• Estilo Musical:\n• Observações ou Minutos Favoritos:\n\nAtenciosamente,'
-                )}
+                href={getSecureMailto()}
                 variant="primary"
                 fullWidth
-                size="lg"
                 icon={<Mail className="w-4 h-4 shrink-0" />}
-                className="w-full max-w-full box-border block text-center py-3.5 px-4 rounded-xl text-sm sm:text-base font-bold"
+                className="w-full max-w-full box-border py-4 px-6 flex items-center justify-center gap-3 text-sm font-semibold rounded-xl tracking-wide shadow-lg shadow-neon-glow"
               >
                 {plan.ctaLabel}
               </Button>
 
               <p className="text-[11px] font-mono text-center text-text-muted">
-                Contratação oficial direta: <span className="text-accent-neon">{getSecureEmail()}</span>
+                Contratação direta sem burocracia: <span className="text-accent-neon font-semibold">{getSecureEmail()}</span>
               </p>
             </div>
 

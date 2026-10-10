@@ -22,11 +22,11 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed max-w-md">
-              Produção de estúdio em alta fidelidade com cortes inteligentes e design editorial para DJs, gravadoras e agências. Sincronia perfeita com o drop e acabamento de palco.
+              Cortes inteligentes em alta fidelidade e design visual para DJs e produtores de música eletrônica. Sincronia perfeita com o drop.
             </p>
             <div className="flex flex-wrap gap-2 pt-1 justify-center md:justify-start">
               <Badge variant="orange" size="sm">
-                Studio Broadcast
+                Alta Definição
               </Badge>
               <Badge variant="cyan" size="sm">
                 Sincronia no Drop
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
               Canal Oficial Único de Contratação
             </h4>
             <p className="text-xs text-text-secondary">
-              Envie o link do seu set ou projeto diretamente para nosso canal de estúdio:
+              Envie o link do seu set ou projeto diretamente para nosso canal de atendimento:
             </p>
             <a
               href={getSecureMailto()}
@@ -67,15 +67,15 @@ export const Footer: React.FC = () => {
             <ul className="text-xs text-text-secondary space-y-2">
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-neon shrink-0" />
-                Padrão Studio Broadcast
+                Alta Fidelidade Visual
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-cdj-cyan shrink-0" />
-                Design Editorial de Palco
+                Sincronia Precisa no Drop
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-vu-green shrink-0" />
-                Acabamento Editorial de Estúdio
+                Renderização Fluida a 60 FPS
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-neon shrink-0" />
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center justify-center gap-2">
             <Disc3 className="w-3.5 h-3.5 text-accent-neon animate-spin-slow shrink-0" />
             <span>
-              &copy; 2026 DJ CLIP CUTTER • Padrão Studio Broadcast. Todos os direitos reservados.
+              &copy; 2026 DJ CLIP CUTTER • Cortes Verticais para DJs. Todos os direitos reservados.
             </span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">

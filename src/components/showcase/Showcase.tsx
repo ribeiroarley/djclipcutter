@@ -163,8 +163,8 @@ export const Showcase: React.FC = () => {
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full box-border">
               <Button
                 href={getSecureMailto(
-                  `Briefing de Set - Template ${currentTemplate.name}`,
-                  `Olá, gostaria de solicitar cortes verticais com o Template: ${currentTemplate.name}.`
+                  'Solicitação de Produção de Cortes — DJ Clip Cutter',
+                  `Olá, DJ Clip Cutter!\n\nGostaria de solicitar a produção de cortes para o meu set.\n\n1. Link do Set (YouTube / SoundCloud / Drive): \n2. Trecho preferido (opcional / minuto do drop): \n3. Formato desejado (Vídeo do YouTube ou Template com Waveform): Template ${currentTemplate.name}\n4. Meu Nome Artístico / Instagram: \n\nAguardo o retorno para combinarmos os detalhes!`
                 )}
                 variant="primary"
                 size="md"

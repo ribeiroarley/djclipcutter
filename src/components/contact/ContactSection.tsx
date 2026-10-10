@@ -30,10 +30,10 @@ export const ContactSection: React.FC = () => {
             {/* Badges */}
             <div className="inline-flex items-center gap-2 flex-wrap justify-center">
               <Badge variant="orange" pulse size="md">
-                Canal Oficial Único de Contratação
+                Canal Oficial de Contratação
               </Badge>
               <Badge variant="cyan" size="md">
-                Studio Broadcast
+                Atendimento Direto
               </Badge>
             </div>
 
@@ -44,7 +44,7 @@ export const ContactSection: React.FC = () => {
                 <span className="text-accent-neon text-glow-orange block sm:inline">PROFISSIONAL</span>
               </h2>
               <p className="text-sm sm:text-base md:text-lg text-text-secondary max-w-2xl mx-auto font-sans leading-relaxed">
-                Envie o link do seu set longo (YouTube ou SoundCloud) para o nosso time de estúdio. Analisamos sua apresentação e retornamos com a proposta ideal.
+                Envie o link do seu set (YouTube ou SoundCloud) ou arquivo direto. Analisamos sua apresentação e retornamos rapidamente com a melhor proposta.
               </p>
             </div>
 
@@ -83,15 +83,11 @@ export const ContactSection: React.FC = () => {
               {/* Direct Mailto Action */}
               <div className="pt-2 w-full box-border">
                 <Button
-                  href={getSecureMailto(
-                    'Solicitação de Cortes Verticais - DJ Clip Cutter',
-                    'Olá time DJ Clip Cutter,\n\nGostaria de solicitar a produção de cortes verticais em alta fidelidade para o meu set:\n\n• Link ou Arquivo do Set (YouTube/SoundCloud/Direto):\n• Minutagem Desejada (ou análise automática de drops):\n• Escolha do Visual (Corte YouTube ou Template):\n• Nome do Artista/DJ:\n• Observações:\n\nAtenciosamente,'
-                  )}
+                  href={getSecureMailto()}
                   variant="primary"
-                  size="lg"
                   icon={<Send className="w-4 h-4 shrink-0" />}
                   fullWidth
-                  className="w-full max-w-full box-border block text-center py-3.5 px-4 rounded-xl text-xs sm:text-base font-bold"
+                  className="w-full max-w-full box-border py-4 px-6 flex items-center justify-center gap-2.5 rounded-xl text-sm font-semibold tracking-wide shadow-lg shadow-neon-glow"
                 >
                   Abrir E-mail com Briefing Pronto
                 </Button>

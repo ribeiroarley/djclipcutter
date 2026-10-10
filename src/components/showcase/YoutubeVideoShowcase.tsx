@@ -40,10 +40,10 @@ export const YoutubeVideoShowcase: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 flex-wrap justify-center">
             <Badge variant="orange" pulse size="md">
-              Vídeo Full-Bleed de Palco
+              Sets Gravados do YouTube
             </Badge>
             <Badge variant="cyan" size="md">
-              Vídeos & Sets do YouTube
+              Formato Vertical Otimizado
             </Badge>
           </div>
 
@@ -55,7 +55,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-text-secondary font-sans leading-relaxed">
-            Aceitamos seu set gravado, gig publicada ou gravação em vídeo completa no YouTube e aplicamos reenquadramento dinâmico com resolução máxima preservada, nitidez adaptativa e design editorial na Safe Zone.
+            Aceitamos seu set gravado ou gravação completa no YouTube e adaptamos para o formato vertical preenchendo a tela do celular sem barras pretas, com resolução máxima preservada e nitidez adaptativa.
           </p>
 
           {/* Feature Chips */}
@@ -86,7 +86,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
                   <div className="w-8 h-1 rounded-full bg-text-muted/40" />
                 </div>
 
-                {/* Vertical Full-Bleed 9:16 Video Display Canvas */}
+                {/* Vertical 9:16 Video Display Canvas */}
                 <div className="relative aspect-[9/16] rounded-[2rem] overflow-hidden bg-black flex flex-col justify-between border border-border-subtle select-none">
                   {/* SIMULATED LIVE FESTIVAL STAGE VIDEO BACKGROUND */}
                   <div className="absolute inset-0 bg-gradient-to-b from-[#02050c] via-[#091326] to-[#040810]">
@@ -134,7 +134,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-vu-red animate-ping" />
                       <span className="text-[8px] sm:text-[9px] font-mono font-bold text-white tracking-widest uppercase">
-                        STUDIO BROADCAST • 60FPS
+                        ALTA DEFINIÇÃO • 60FPS
                       </span>
                     </div>
 
@@ -188,7 +188,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
                       <div className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] font-mono text-text-secondary truncate">
                         <span className="text-white font-medium">132 BPM</span>
                         <span>•</span>
-                        <span className="text-cdj-cyan truncate">STUDIO BROADCAST</span>
+                        <span className="text-cdj-cyan truncate">ÁUDIO MASTER</span>
                       </div>
                     </div>
 
@@ -225,7 +225,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
 
             <h3 className="font-bebas text-3xl sm:text-4xl lg:text-5xl text-white tracking-wide leading-tight">
               ENQUADRAMENTO DINÂMICO{' '}
-              <span className="text-accent-neon text-glow-orange">FULL-BLEED 9:16</span>{' '}
+              <span className="text-accent-neon text-glow-orange">VERTICAL 9:16</span>{' '}
               SEM DEFORMAÇÃO
             </h3>
 
@@ -239,7 +239,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
                 <div className="flex items-center gap-2.5">
                   <Maximize2 className="w-4 h-4 text-accent-neon shrink-0" />
                   <span className="font-semibold text-sm text-white">
-                    Full-Bleed 9:16 Inteligente
+                    Enquadramento Vertical 9:16
                   </span>
                 </div>
                 <p className="text-xs text-text-secondary mt-1.5 leading-relaxed font-sans">
@@ -296,21 +296,17 @@ export const YoutubeVideoShowcase: React.FC = () => {
             </div>
 
             {/* Direct Action Link to Email */}
-            <div className="p-4 sm:p-6 w-full box-border rounded-2xl bg-bg-card/40 border border-border-official/60 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 overflow-hidden">
+            <div className="pt-4 flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto lg:mx-0 box-border text-center">
               <Button
-                href={getSecureMailto(
-                  'Corte de Vídeo do YouTube - DJ Clip Cutter',
-                  'Olá, tenho um set no YouTube e gostaria de solicitar cortes verticais em alta fidelidade:\n\nLink do Vídeo do YouTube: \nNome do DJ/Evento: '
-                )}
+                href={getSecureMailto()}
                 variant="primary"
-                size="md"
-                icon={<YoutubeIcon className="w-4 h-4 text-red-500 shrink-0" />}
-                className="w-full max-w-full box-border flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-center text-xs sm:text-sm font-semibold leading-tight sm:w-auto"
+                icon={<YoutubeIcon className="w-4 h-4 text-white shrink-0" />}
+                className="w-full max-w-md mx-auto py-3.5 px-6 flex items-center justify-center gap-2.5 rounded-xl text-center text-sm font-semibold leading-tight shadow-neon-glow"
               >
                 Enviar Link do YouTube para Corte
               </Button>
 
-              <span className="text-xs font-mono text-text-muted text-center sm:text-left">
+              <span className="text-xs font-mono text-text-muted text-center">
                 Processamento em alta fidelidade a 60 FPS
               </span>
             </div>
