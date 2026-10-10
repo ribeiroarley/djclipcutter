@@ -1,7 +1,7 @@
 import React from 'react';
-import { Mail, ShieldCheck, Disc3, Radio } from 'lucide-react';
+import { Mail, ShieldCheck, Disc3, Radio, Send } from 'lucide-react';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail, getSecureMailto } from '../../utils/security';
+import { getSecureEmail } from '../../utils/security';
 
 export const Footer: React.FC = () => {
   return (
@@ -47,14 +47,14 @@ export const Footer: React.FC = () => {
               Envie o link do seu set ou projeto diretamente para nosso canal de atendimento:
             </p>
             <a
-              href={getSecureMailto()}
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold text-accent-neon hover:text-white transition-colors bg-accent-neon/10 px-3.5 py-2 rounded-lg border border-accent-neon/30 hover:border-accent-neon break-all sm:break-normal"
+              href="#contato"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold text-accent-neon hover:text-white transition-colors bg-accent-neon/10 px-3.5 py-2 rounded-lg border border-accent-neon/30 hover:border-accent-neon"
             >
-              {getSecureEmail()}
+              <Send className="w-3.5 h-3.5" />
+              <span>Enviar Briefing do Set</span>
             </a>
             <p className="text-[11px] font-mono text-text-muted">
-              Produção sob demanda para apresentações gravadas, sets completos e faixas autorais.
+              Canal oficial: <span className="text-zinc-300 font-semibold">{getSecureEmail()}</span>
             </p>
           </div>
 

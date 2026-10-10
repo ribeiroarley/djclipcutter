@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Menu, X, Disc3 } from 'lucide-react';
-import { getSecureEmail, getSecureMailto } from '../../utils/security';
+import { Send, Menu, X, Disc3 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,12 +57,11 @@ export const Navbar: React.FC = () => {
         {/* BLOCO 3 (DIREITA): BOTÃO DE CONTATO DESKTOP */}
         <div className="hidden sm:flex items-center shrink-0">
           <a
-            href={getSecureMailto()}
-            rel="noopener noreferrer"
+            href="#contato"
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FF5500] hover:bg-[#FF6600] text-white font-mono text-xs font-semibold tracking-wider transition-all shadow-[0_0_20px_rgba(255,85,0,0.3)] hover:shadow-[0_0_28px_rgba(255,85,0,0.5)] active:scale-[0.98]"
           >
-            <Mail className="w-4 h-4" />
-            <span>{getSecureEmail().toUpperCase()}</span>
+            <Send className="w-4 h-4" />
+            <span>SOLICITAR CORTES</span>
           </a>
         </div>
 
@@ -110,12 +108,12 @@ export const Navbar: React.FC = () => {
 
           <div className="pt-2">
             <a
-              href={getSecureMailto()}
-              rel="noopener noreferrer"
+              href="#contato"
+              onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-[#FF5500] hover:bg-[#FF6600] text-white font-mono text-xs font-semibold tracking-wider transition-all shadow-[0_0_20px_rgba(255,85,0,0.3)] text-center"
             >
-              <Mail className="w-4 h-4" />
-              <span>{getSecureEmail().toUpperCase()}</span>
+              <Send className="w-4 h-4" />
+              <span>ENVIAR BRIEFING DO SET</span>
             </a>
           </div>
         </div>

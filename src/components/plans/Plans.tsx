@@ -2,8 +2,8 @@ import React from 'react';
 import { PLANS_DATA } from '../../data/plans';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
-import { Check, Mail, Clock, Video } from 'lucide-react';
-import { getSecureEmail, getSecureMailto } from '../../utils/security';
+import { Check, Send, Clock, Video } from 'lucide-react';
+import { getSecureEmail } from '../../utils/security';
 
 export const Plans: React.FC = () => {
   const plan = PLANS_DATA[0];
@@ -101,10 +101,10 @@ export const Plans: React.FC = () => {
             {/* Direct Mail CTA */}
             <div className="mt-8 pt-4 border-t border-border-official/60 space-y-3 w-full box-border">
               <Button
-                href={getSecureMailto()}
+                href="#contato"
                 variant="primary"
                 fullWidth
-                icon={<Mail className="w-4 h-4 shrink-0" />}
+                icon={<Send className="w-4 h-4 shrink-0" />}
                 className="w-full max-w-full box-border py-4 px-6 flex items-center justify-center gap-3 text-sm font-semibold rounded-xl tracking-wide shadow-lg shadow-neon-glow"
               >
                 {plan.ctaLabel}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FAQ_DATA } from '../../data/faq';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail, getSecureMailto } from '../../utils/security';
+import { getSecureEmail } from '../../utils/security';
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -19,8 +19,7 @@ export const FaqSection: React.FC = () => {
         <>
           {parts[0]}
           <a
-            href={getSecureMailto('Dúvida sobre Produção de Set - DJ Clip Cutter')}
-            rel="noopener noreferrer"
+            href="#contato"
             className="text-accent-neon font-mono font-bold hover:underline hover:text-white transition-colors inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 rounded bg-accent-neon/10 border border-accent-neon/30"
           >
             {secureEmail}

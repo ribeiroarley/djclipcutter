@@ -4,8 +4,8 @@ import type { AspectRatioType } from '../../types';
 import { TemplatePreview } from './TemplatePreview';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
-import { Check, Mail, Layers } from 'lucide-react';
-import { getSecureEmail, getSecureMailto } from '../../utils/security';
+import { Check, Send, Layers } from 'lucide-react';
+import { getSecureEmail } from '../../utils/security';
 
 export const Showcase: React.FC = () => {
   const [activeTemplateIndex, setActiveTemplateIndex] = useState(0);
@@ -162,13 +162,10 @@ export const Showcase: React.FC = () => {
             {/* Action CTA */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full box-border">
               <Button
-                href={getSecureMailto(
-                  'Solicitação de Produção de Cortes — DJ Clip Cutter',
-                  `Olá, DJ Clip Cutter!\n\nGostaria de solicitar a produção de cortes para o meu set.\n\n1. Link do Set (YouTube / SoundCloud / Drive): \n2. Trecho preferido (opcional / minuto do drop): \n3. Formato desejado (Vídeo do YouTube ou Template com Waveform): Template ${currentTemplate.name}\n4. Meu Nome Artístico / Instagram: \n\nAguardo o retorno para combinarmos os detalhes!`
-                )}
+                href="#contato"
                 variant="primary"
                 size="md"
-                icon={<Mail className="w-4 h-4 shrink-0" />}
+                icon={<Send className="w-4 h-4 shrink-0" />}
                 className="w-full max-w-full box-border flex items-center justify-center text-center px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold sm:w-auto"
               >
                 Solicitar com este Template

@@ -1,10 +1,9 @@
 import React from 'react';
-import { Mail, Disc, Play, ArrowRight } from 'lucide-react';
+import { Send, Disc, Play, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import { AudioWaveformVisualizer } from '../ui/AudioWaveformVisualizer';
 import { VuMeter } from '../ui/VuMeter';
-import { getSecureMailto } from '../../utils/security';
 
 export const Hero: React.FC = () => {
   return (
@@ -46,13 +45,13 @@ export const Hero: React.FC = () => {
             {/* Action Buttons */}
             <div className="w-full max-w-sm sm:max-w-md mx-auto flex flex-col sm:flex-row items-center justify-center gap-3.5 my-6 lg:mx-0 lg:max-w-none lg:justify-start box-border">
               <Button
-                href={getSecureMailto()}
+                href="#contato"
                 variant="primary"
-                icon={<Mail className="w-4 h-4 shrink-0" />}
+                icon={<Send className="w-4 h-4 shrink-0" />}
                 iconPosition="left"
                 className="h-12 w-full sm:w-auto px-6 flex items-center justify-center gap-2.5 rounded-xl font-semibold text-sm transition-all shadow-neon-glow"
               >
-                Solicitar Demonstração via E-mail
+                Solicitar Demonstração via Briefing
               </Button>
 
               <Button

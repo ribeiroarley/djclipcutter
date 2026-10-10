@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { AudioWaveformVisualizer } from '../ui/AudioWaveformVisualizer';
-import { getSecureMailto } from '../../utils/security';
 import {
   Play,
   Pause,
@@ -272,7 +271,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
             {/* Direct Action Link to Email */}
             <div className="pt-4 flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto lg:mx-0 box-border text-center">
               <Button
-                href={getSecureMailto()}
+                href="#contato"
                 variant="primary"
                 icon={<YoutubeIcon className="w-4 h-4 text-white shrink-0" />}
                 className="w-full max-w-md mx-auto py-3.5 px-6 flex items-center justify-center gap-2.5 rounded-xl text-center text-sm font-semibold leading-tight shadow-neon-glow"

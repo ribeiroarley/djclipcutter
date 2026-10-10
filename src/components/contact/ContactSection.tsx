@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
-import { getSecureEmail, getValidatedMailto, getSecureMailto } from '../../utils/security';
+import { getSecureEmail, getValidatedMailto } from '../../utils/security';
 import { validateSetUrl, getSupportedPlatformList } from '../../utils/urlValidator';
 
 export const ContactSection: React.FC = () => {
@@ -53,7 +53,7 @@ export const ContactSection: React.FC = () => {
         preferredTimestamp: timestamp.trim(),
         visualFormat,
       })
-    : getSecureMailto();
+    : '#contato';
 
   return (
     <section id="contato" className="py-16 sm:py-20 lg:py-32 bg-bg-primary relative overflow-hidden">
@@ -316,13 +316,6 @@ export const ContactSection: React.FC = () => {
                       </>
                     )}
                   </button>
-
-                  <a
-                    href={getSecureMailto()}
-                    className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-xs font-mono text-text-secondary hover:text-white bg-bg-card border border-border-official hover:border-accent-neon/50 transition-colors shrink-0"
-                  >
-                    Modelo Padrão
-                  </a>
                 </div>
               </div>
             </div>
