@@ -9,7 +9,7 @@ export const PLANS_DATA: PlanItem[] = [
     isPopular: true,
     description: 'Produção sob demanda para apresentações gravadas, sets completos e faixas autorais. Transformação completa do seu set em vídeos verticais em alta fidelidade prontos para publicação imediata.',
     turnaround: 'Entrega Ágil sob Demanda',
-    outputQuality: 'Alta Definição Preservada (60 FPS)',
+    outputQuality: 'Alta Definição Preservada (Fluidez Nativa)',
     deliverables: [
       'Cortes verticais em alta definição adaptados para cada rede social (Reels, Feed Retrato e Stories)',
       'Sincronia acústica no drop exato da faixa com precisão milimétrica',

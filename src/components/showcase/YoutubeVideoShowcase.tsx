@@ -6,11 +6,10 @@ import { getSecureMailto } from '../../utils/security';
 import {
   Play,
   Pause,
-  Sliders,
+  Sparkles,
   Maximize2,
   Radio,
   ShieldCheck,
-  Zap,
 } from 'lucide-react';
 
 const YoutubeIcon: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }) => (
@@ -21,12 +20,11 @@ const YoutubeIcon: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }
 
 export const YoutubeVideoShowcase: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [sharpnessActive, setSharpnessActive] = useState(true);
 
   const chips = [
-    { label: 'Resolução Máxima Preservada', color: 'orange' },
-    { label: 'Safe Zone Imune a Botões do Reels', color: 'cyan' },
-    { label: 'Nitidez de Lasers & Palco (CAS 0.6)', color: 'green' },
+    { label: 'Nitidez e Cores de Palco Preservadas', color: 'orange' },
+    { label: 'Enquadramento Vertical Sem Barras Pretas', color: 'cyan' },
+    { label: 'Safe Zone Imune a Botões do Reels', color: 'green' },
   ];
 
   return (
@@ -55,7 +53,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-text-secondary font-sans leading-relaxed">
-            Aceitamos seu set gravado ou gravação completa no YouTube e adaptamos para o formato vertical preenchendo a tela do celular sem barras pretas, com resolução máxima preservada e nitidez adaptativa.
+            Aceitamos seu set gravado ou gravação completa no YouTube e adaptamos para o formato vertical preenchendo a tela do celular sem barras pretas, com resolução máxima preservada e cores vibrantes de palco.
           </p>
 
           {/* Feature Chips */}
@@ -134,13 +132,12 @@ export const YoutubeVideoShowcase: React.FC = () => {
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-vu-red animate-ping" />
                       <span className="text-[8px] sm:text-[9px] font-mono font-bold text-white tracking-widest uppercase">
-                        ALTA DEFINIÇÃO • 60FPS
+                        HD / FULL HD PRESERVE
                       </span>
                     </div>
 
                     <div className="flex items-center gap-1 bg-black/70 px-1.5 sm:px-2 py-0.5 rounded border border-border-official text-[8px] sm:text-[9px] font-mono text-accent-neon font-bold">
-                      <Zap className="w-2.5 h-2.5" />
-                      {sharpnessActive ? 'CAS 0.6 ATIVO' : 'ORIGINAL'}
+                      FORMATO VERTICAL 9:16
                     </div>
                   </div>
 
@@ -249,13 +246,13 @@ export const YoutubeVideoShowcase: React.FC = () => {
 
               <div className="p-4 rounded-xl bg-bg-card border border-border-official hover:border-cdj-cyan/40 transition-colors">
                 <div className="flex items-center gap-2.5">
-                  <Sliders className="w-4 h-4 text-cdj-cyan shrink-0" />
+                  <Sparkles className="w-4 h-4 text-cdj-cyan shrink-0" />
                   <span className="font-semibold text-sm text-white">
-                    Filtro Adaptativo AMD CAS (0.6)
+                    Nitidez e Cores de Palco Preservadas
                   </span>
                 </div>
                 <p className="text-xs text-text-secondary mt-1.5 leading-relaxed font-sans">
-                  Compressões normais do YouTube borram lasers e fumaça de festival. Nosso filtro de nitidez adaptativa restaura o contraste dos feixes de luz sem criar ruído artificial na imagem.
+                  Ajuste fino de contraste e nitidez nativa para valorizar feixes de laser, iluminação de palco e movimentos na cabine, sem distorção e sem ruído artificial.
                 </p>
               </div>
 
@@ -272,29 +269,6 @@ export const YoutubeVideoShowcase: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Interactive Sharpness Toggle */}
-            <div className="p-4 rounded-2xl bg-bg-subtle/70 border border-border-official flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-              <div>
-                <span className="text-xs font-mono font-bold text-white block">
-                  Simulador de Filtro CAS 0.6
-                </span>
-                <span className="text-[11px] font-mono text-text-muted">
-                  {sharpnessActive ? 'Nitidez de palco ativada (+60% de definição em lasers)' : 'Visual sem realce espectral'}
-                </span>
-              </div>
-
-              <button
-                onClick={() => setSharpnessActive(!sharpnessActive)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all shrink-0 ${
-                  sharpnessActive
-                    ? 'bg-cdj-cyan text-black shadow-cyan-sm'
-                    : 'bg-white/10 text-text-secondary hover:text-white'
-                }`}
-              >
-                {sharpnessActive ? '✓ Filtro Ativo' : 'Ativar Nitidez'}
-              </button>
-            </div>
-
             {/* Direct Action Link to Email */}
             <div className="pt-4 flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto lg:mx-0 box-border text-center">
               <Button
@@ -307,7 +281,7 @@ export const YoutubeVideoShowcase: React.FC = () => {
               </Button>
 
               <span className="text-xs font-mono text-text-muted text-center">
-                Processamento em alta fidelidade a 60 FPS
+                Fluidez nativa e otimizado para Reels e Stories
               </span>
             </div>
           </div>

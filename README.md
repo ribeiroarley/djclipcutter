@@ -2,7 +2,7 @@
 
 > **Cortes Verticais Especializados em Alta Fidelidade para DJs e Produtores.**
 
-Landing Page oficial do serviço **DJ Clip Cutter**. Especializada em transformar apresentações completas e sets gravados (no YouTube, SoundCloud ou arquivos diretos) em cortes verticais inteligentes em **alta fidelidade (resolução máxima preservada @ 60 FPS)**, milimetricamente sincronizados no drop do beat e otimizados para Reels, TikTok e Shorts.
+Landing Page oficial do serviço **DJ Clip Cutter**. Especializada em transformar apresentações completas e sets gravados (no YouTube, SoundCloud ou arquivos diretos) em cortes verticais inteligentes em **alta fidelidade e fluidez nativa preservada**, milimetricamente sincronizados no drop do beat e otimizados para Reels, TikTok e Shorts.
 
 ---
 

@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
               </span>
             </div>
             <span className="text-xs font-mono text-text-secondary flex items-center gap-1">
-              <Disc3 className="w-3.5 h-3.5 text-accent-neon animate-spin-slow" /> 60 FPS
+              <Disc3 className="w-3.5 h-3.5 text-accent-neon animate-spin-slow" /> FLUIDEZ NATIVA
             </span>
           </div>
 

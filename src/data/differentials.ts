@@ -24,8 +24,8 @@ export const TECHNICAL_PILLARS: TechnicalPillar[] = [
     title: 'Motion Design Reativo de Palco',
     kicker: 'Pilar 03 • Identidade Visual Viva',
     description: 'A assinatura inconfundível do DJ Clip Cutter: waveforms vetoriais e elementos visuais em Laranja SoundCloud Neon (#FF5500) e Azul Pioneer CDJ (#00E5FF) que pulsam e respondem de verdade à pressão sonora da música.',
-    metric: '60 FPS',
-    metricLabel: 'Fluidez Fluorescente Sem Latência',
+    metric: 'FLUIDEZ NATIVA',
+    metricLabel: 'Renderização Fluida Sem Latência',
     tags: ['#FF5500 Neon Glow', 'Visual Reativo ao Som', 'Estética Cabine DJ', 'Design Editorial']
   }
 ];

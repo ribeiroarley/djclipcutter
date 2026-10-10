@@ -118,7 +118,7 @@ export const Hero: React.FC = () => {
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-vu-red animate-ping" />
                       <span className="text-[8px] sm:text-[10px] font-mono font-bold text-white tracking-widest bg-black/60 px-1.5 sm:px-2 py-0.5 rounded border border-border-official">
-                        ALTA DEFINIÇÃO • 60FPS
+                        ALTA DEFINIÇÃO • FLUIDEZ NATIVA
                       </span>
                     </div>
                     <span className="text-[8px] sm:text-[10px] font-mono text-accent-neon font-bold tracking-wider">

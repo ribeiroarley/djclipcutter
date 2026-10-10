@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
                 Sincronia no Drop
               </Badge>
               <Badge variant="green" size="sm">
-                60 FPS Render
+                Fluidez Nativa
               </Badge>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-vu-green shrink-0" />
-                Renderização Fluida a 60 FPS
+                Renderização com Fluidez Nativa
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-neon shrink-0" />

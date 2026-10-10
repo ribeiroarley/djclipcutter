@@ -222,7 +222,7 @@ export const TemplatePreview: React.FC<TemplatePreviewProps> = ({
         <div className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-accent-neon animate-ping" />
           <span className="text-[8px] sm:text-[9px] font-mono font-bold text-white tracking-wider">
-            ALTA DEFINIÇÃO • 60FPS
+            ALTA DEFINIÇÃO • FLUIDEZ NATIVA
           </span>
         </div>
         <div className="flex items-center gap-1.5">
